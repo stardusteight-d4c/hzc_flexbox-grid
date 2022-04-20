@@ -437,7 +437,7 @@ article.cartao:nth-child(6) {
 
     .destaque-video {
         grid-area: destaque-video;
-        padding-left: 15px;
+        margin-left: -15px;
     }
     
     .videos-recentes {
