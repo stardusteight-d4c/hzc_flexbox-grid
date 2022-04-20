@@ -77,8 +77,8 @@ body {
     .cabecalho_perfil::before {
         content: "";
         display: block;
-        width: 32px;
-        height: 32px;
+        width: 38px;
+        height: 38px;
         background-image: url(../img/profile_2.png);
         background-size: contain;
         background-repeat: no-repeat;
@@ -182,7 +182,8 @@ body {
 }
 
 .titulo-secao {
-    font-size: 1.2rem;
+    font-size: 26px;
+    line-height: 32px;
     font-weight: 700;
 }
 
@@ -217,6 +218,10 @@ body {
     display: none;
 }
 
+.cartao_imagem:hover {
+    cursor: pointer;
+}
+
 .cartao--destaque {
     margin-bottom: 16px;
 }
@@ -230,6 +235,14 @@ body {
 
 .cartao_destaque {
     grid-column: span 2;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+article.cartao:nth-child(6) {
+    margin-left: -15px;
+    padding-right: 15px;
 }
 
 .cartao_titulo {
@@ -238,9 +251,35 @@ body {
     grid-column: span 2;
 }
 
+.cartao_titulo, .cartao_item-titulo, .cartao_titulo-arte, .cartao_titulo-compra, .cartao_titulo-play:hover {
+    cursor: pointer;
+}
+
+.cartao_titulo-arte {
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 700;
+    grid-column: span 2;
+}
+
+.cartao_titulo-compra {
+    font-size: 1.2rem;
+    font-weight: 700;
+    grid-column: span 2;
+    grid-row: span 6;
+}
+
+.cartao_titulo-play {
+    font-size: 1.2rem;
+    font-weight: 700;
+    grid-column: span 2;
+    grid-row: span 6;
+}
+
 .cartao_perfil {
     color: #95999C;
-    font-size: 0.9rem;
+    font-size: 14px;
+    line-height: 24px;
     grid-column: span 2;
 }
 
@@ -260,6 +299,15 @@ body {
     margin-right: 8px;
 }
 
+.cartao_info--visualizacao-compra {
+    margin: -60px;
+}
+
+.cartao_info--moeda::before {
+    content: "\e905";
+    margin-right: 8px;
+}
+
 .cartao_botao {
     display: flex;
     justify-content: center;
@@ -272,14 +320,24 @@ body {
     justify-self: flex-end;
 }
 
+.cartao_botao:hover {
+    cursor: pointer;
+}
+
 .cartao_botao--play::before {
     content: "\e90b";
+    font-size: 24px;
+}
+
+.cartao_botao--compra::before {
+    content: "\e901";
     font-size: 24px;
 }
 
 .cartao_botao--destaque {
     width: 100%;
     grid-column: span 2;
+    font-weight: 700;
 }
 
 .cartao_botao--destaque::before {
@@ -301,6 +359,7 @@ body {
    
     .cartao_imagem--desktop {
         display: block;
+        width: 730px;
     }
 
     .cartao_botao--destaque {
@@ -313,7 +372,7 @@ body {
         grid-template-columns: auto auto;
         align-items: center;
         row-gap: 24px;
-        width: 256px;
+        width: 233px;
         padding: 16px;
         box-sizing: border-box;
         align-self: flex-start;
@@ -344,7 +403,14 @@ body {
 
     .cartao_item-thumbnail {
         width: 32px;
-        gap: span 2;
+        grid-row: span 2;
+        align-self: normal;
+        margin-top: 4px;
+        border-radius: 5px;
+    }
+
+    .cartao_item-thumbnail:hover {
+        cursor: pointer;
     }
 
     .cartao_item-titulo {
