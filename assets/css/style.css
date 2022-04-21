@@ -32,6 +32,10 @@
         margin-bottom: -12px;
         padding: 16px 0px 0px 3px;
     }
+
+    .card_imagem--mobile {
+        width: 900px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -47,6 +51,24 @@
         column-gap: 32px;
         padding: 16px 60px;
         grid-column: 2;
+    }
+
+    /* ajustes/gambiarra */
+    article.card_destaque:nth-child(2) {
+        padding-right: 15px;
+    }
+
+    article.card_destaque:nth-child(2) > img:nth-child(2) {
+        min-width: 730px;
+    }
+
+    article.card:nth-child(6) {
+        margin-left: -15px;
+        padding-right: 15px;
+    }
+
+    article.card:nth-child(6) > img:nth-child(2) {
+        min-width: 730px;
     }
 }
 
