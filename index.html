@@ -10,205 +10,207 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/header-nav.css">
+    <link rel="stylesheet" href="assets/css/card.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header class="cabecalho">
-        <button class="cabecalho_menu" aria-label="Menu"><i></i></button>
-        <img src="assets/img/logo.svg" alt="Logotipo da HZC" class="cabecalho_logo">
-        <p class="cabecalho_perfil"><a href="#">Gabriel Sena</a></p>
-        <button class="cabecalho_notificacao" aria-label="Notificação"><i></i></button>
+    <header class="header_menu">
+        <button class="menu" aria-label="Menu"><i></i></button>
+        <img src="assets/img/logo.svg" alt="Logotipo da HZC" class="header_logo">
+        <p class="header_perfil"><a href="#">Gabriel Sena</a></p>
+        <button class="header_alert" aria-label="Notificação"><i></i></button>
     </header>
-    <nav class="menu-lateral">
-        <img src="assets/img/logo.svg" alt="Logotipo da HZC" class="menu-lateral_logo">
-        <a href="#" id="myProfile">Gabriel Sena</a>
-        <a href="#" class="menu-lateral_link menu-lateral_link--inicio menu-lateral_link--ativo">Início</a>
-        <a href="#" class="menu-lateral_link menu-lateral_link--videos">Vídeos</a>
-        <a href="#" class="menu-lateral_link menu-lateral_link--picos">Picos</a>
-        <a href="#" class="menu-lateral_link menu-lateral_link--integrantes">Integrantes</a>
-        <a href="#" class="menu-lateral_link menu-lateral_link--camisas">Camisas</a>
-        <a href="#" class="menu-lateral_link menu-lateral_link--pinturas">Pinturas</a>
+    <nav class="menu_vertical">
+        <img src="assets/img/logo.svg" alt="Logotipo da HZC" class="menu_vertical-logo">
+        <a href="#" id="profile_mobile">Gabriel Sena</a>
+        <a href="index.html" class="menu_vertical-link menu_vertical-link--inicio menu_vertical-link--ativo">Início</a>
+        <a href="#" class="menu_vertical-link menu_vertical-link--videos">Vídeos</a>
+        <a href="picos.html" class="menu_vertical-link menu_vertical-link--picos">Picos</a>
+        <a href="#" class="menu_vertical-link menu_vertical-link--integrantes">Integrantes</a>
+        <a href="#" class="menu_vertical-link menu_vertical-link--camisas">Camisas</a>
+        <a href="#" class="menu_vertical-link menu_vertical-link--pinturas">Pinturas</a>
     </nav>
-
+    
     <main class="principal">
         <h2 class="titulo-pagina">Início</h2>
-        <article class="cartao cartao--destaque destaque-video">
-            <img src="assets/img/banner-mobile_1.png" alt="Banner do cartão" class="cartao_imagem cartao_imagem--mobile">
-            <img src="assets/img/banner_1.png" alt="Banner do cartão" class="cartao_imagem cartao_imagem--desktop">
-            <div class="cartao_conteudo">
-                <p class="cartao_destaque">Vídeo em destaque</p>
-                <h3 class="cartao_titulo">HZC - Life is... / 2022</h3>
-                <p class="cartao_perfil">Bruno Lopez</p>
-                <p class="cartao_info cartao_info--tempo">33 minutos</p>
-                <p class="cartao_info cartao_info--visualizacao">33 visualizações</p>
-                <button class="cartao_botao cartao_botao--play cartao_botao--destaque">Assistir agora</button>
+        <article class="card card_destaque card_destaque-principal">
+            <img src="assets/img/banner-mobile_1.png" alt="Banner do cartão" class="card_imagem--mobile">
+            <img src="assets/img/banner_1.png" alt="Banner do cartão" class="card_imagem--desktop">
+            <div class="card_conteudo">
+                <p class="card_titulo">Vídeo em destaque</p>
+                <h3 class="card_titulo">HZC - Life is... / 2022</h3>
+                <p class="card_perfil">Bruno Lopez</p>
+                <p class="card_info card_info--tempo">33 minutos</p>
+                <p class="card_info card_info--visualizacao">33 visualizações</p>
+                <button class="card_botao card_botao--play card_botao--destaque">Assistir agora</button>
             </div>
         </article>
 
-        <article class="cartao cartao--recentes videos-recentes">
-            <h3 class="cartao_titulo">Vídeos recentes</h3>
-            <a href="#" class="cartao_link">Ver todos</a>
-            <ul class="cartao_lista">
-                <li class="cartao_item">
-                    <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao_item-thumbnail">
-                    <h4 class="cartao_item-titulo">HZC - Love machine</h4>
-                    <p class="cartao_item-perfil">Bruno Lopez</p>
+        <article class="card card_recentes card-satelite">
+            <h3 class="card_titulo">Vídeos recentes</h3>
+            <a href="#" class="card_link">Ver todos</a>
+            <ul class="card_list">
+                <li class="card_item">
+                    <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="card_item-thumbnail">
+                    <h4 class="card_item-titulo">HZC - Love machine</h4>
+                    <p class="card_item-perfil">Bruno Lopez</p>
                 </li>
-                <li class="cartao_item">
-                    <img src="assets/img/miniatura_2.png" alt="Thumbnail" class="cartao_item-thumbnail">
-                    <h4 class="cartao_item-titulo">HZC - Vol. 3</h4>
-                    <p class="cartao_item-perfil">Júlia Fonseca</p>
+                <li class="card_item">
+                    <img src="assets/img/miniatura_2.png" alt="Thumbnail" class="card_item-thumbnail">
+                    <h4 class="card_item-titulo">HZC - Vol. 3</h4>
+                    <p class="card_item-perfil">Júlia Fonseca</p>
                 </li>
-                <li class="cartao_item">
-                    <img src="assets/img/miniatura_3.png" alt="Thumbnail" class="cartao_item-thumbnail">
-                    <h4 class="cartao_item-titulo">HZC - Pescaria na Urca</h4>
-                    <p class="cartao_item-perfil">Bruno Lopez</p>
+                <li class="card_item">
+                    <img src="assets/img/miniatura_3.png" alt="Thumbnail" class="card_item-thumbnail">
+                    <h4 class="card_item-titulo">HZC - Pescaria na Urca</h4>
+                    <p class="card_item-perfil">Bruno Lopez</p>
                 </li>
-                <li class="cartao_item">
-                    <img src="assets/img/miniatura_4.png" alt="Thumbnail" class="cartao_item-thumbnail">
-                    <h4 class="cartao_item-titulo">Vidalocagi - Guerreiros do Asfalto</h4>
-                    <p class="cartao_item-perfil">Gabriel Sena</p>
+                <li class="card_item">
+                    <img src="assets/img/miniatura_4.png" alt="Thumbnail" class="card_item-thumbnail">
+                    <h4 class="card_item-titulo">Vidalocagi - Guerreiros do Asfalto</h4>
+                    <p class="card_item-perfil">Gabriel Sena</p>
                 </li>
-                <li class="cartao_item">
-                    <img src="assets/img/miniatura_5.png" alt="Thumbnail" class="cartao_item-thumbnail">
-                    <h4 class="cartao_item-titulo">Vidalocagi - Não importa o nível</h4>
-                    <p class="cartao_item-perfil">Bruno Lopez</p>
+                <li class="card_item">
+                    <img src="assets/img/miniatura_5.png" alt="Thumbnail" class="card_item-thumbnail">
+                    <h4 class="card_item-titulo">Vidalocagi - Não importa o nível</h4>
+                    <p class="card_item-perfil">Bruno Lopez</p>
                 </li>
             </ul>
         </article>
 
         <section class="secao secao-videos">
             <h3 class="titulo-secao">Vídeos mais vistos</h3>
-            <article class="cartao">
-                <img src="assets/img/video_1.png" alt="Vídeo" class="cartao_imagem">
-                <div class="cartao_conteudo">
-                    <p class="cartao_perfil">André Soares</p>
-                    <h3 class="cartao_titulo-play">HZC - Tudo sem Padrin</h3>
-                    <p class="cartao_info cartao_info--tempo">22 minutos</p>
-                    <button class="cartao_botao cartao_botao--play" aria-label="Assistir agora"></button>
+            <article class="card">
+                <img src="assets/img/video_1.png" alt="Vídeo">
+                <div class="card_conteudo">
+                    <p class="card_perfil">André Soares</p>
+                    <h3 class="card_titulo-play">HZC - Tudo sem Padrin</h3>
+                    <p class="card_info card_info--tempo">22 minutos</p>
+                    <button class="card_botao card_botao--play" aria-label="Assistir agora"></button>
                 </div>
             </article>
 
-            <article class="cartao">
-                <img src="assets/img/video_2.png" alt="Vídeo" class="cartao_imagem">
-                <div class="cartao_conteudo">
-                    <p class="cartao_perfil">Pedro Alvez</p>
-                    <h3 class="cartao_titulo-play">HZC - Enter The Hu-flez</h3>
-                    <p class="cartao_info cartao_info--tempo">10 minutos</p>
-                    <button class="cartao_botao cartao_botao--play" aria-label="Assistir agora"></button>
+            <article class="card">
+                <img src="assets/img/video_2.png" alt="Vídeo">
+                <div class="card_conteudo">
+                    <p class="card_perfil">Pedro Alvez</p>
+                    <h3 class="card_titulo-play">HZC - Enter The Hu-flez</h3>
+                    <p class="card_info card_info--tempo">10 minutos</p>
+                    <button class="card_botao card_botao--play" aria-label="Assistir agora"></button>
                 </div>
             </article>
 
-            <article class="cartao">
-                <img src="assets/img/video_3.png" alt="Vídeo" class="cartao_imagem">
-                <div class="cartao_conteudo">
-                    <p class="cartao_perfil">Júlia Fonseca</p>
-                    <h3 class="cartao_titulo-play">HZC - Vol.3</h3>
-                    <p class="cartao_info cartao_info--tempo">22 minutos</p>
-                    <button class="cartao_botao cartao_botao--play" aria-label="Assistir agora"></button>
+            <article class="card">
+                <img src="assets/img/video_3.png" alt="Vídeo">
+                <div class="card_conteudo">
+                    <p class="card_perfil">Júlia Fonseca</p>
+                    <h3 class="card_titulo-play">HZC - Vol.3</h3>
+                    <p class="card_info card_info--tempo">22 minutos</p>
+                    <button class="card_botao card_botao--play" aria-label="Assistir agora"></button>
                 </div>
             </article>
 
-            <article class="cartao">
-                <img src="assets/img/video_4.png" alt="Vídeo" class="cartao_imagem">
-                <div class="cartao_conteudo">
-                    <p class="cartao_perfil">Bruno Lopez</p>
-                    <h3 class="cartao_titulo-play">HZC - Love Machine</h3>
-                    <p class="cartao_info cartao_info--tempo">33 minutos</p>
-                    <button class="cartao_botao cartao_botao--play" aria-label="Assistir agora"></button>
+            <article class="card">
+                <img src="assets/img/video_4.png" alt="Vídeo">
+                <div class="card_conteudo">
+                    <p class="card_perfil">Bruno Lopez</p>
+                    <h3 class="card_titulo-play">HZC - Love Machine</h3>
+                    <p class="card_info card_info--tempo">33 minutos</p>
+                    <button class="card_botao card_botao--play" aria-label="Assistir agora"></button>
                 </div>
             </article>
         </section>
 
-        <article class="cartao cartao--recentes produtos-recentes">
-            <h3 class="cartao_titulo">Novas artes</h3>
-            <a href="#" class="cartao_link">Ver todos</a>
-            <ul class="cartao_lista">
-                <li class="cartao_item">
-                    <img src="assets/img/arts1.jpeg" alt="Thumbnail" class="cartao_item-thumbnail">
-                    <h4 class="cartao_item-titulo">Sem título 01</h4>
-                    <p class="cartao_item-perfil">Antonio Tebyriçá</p>
+        <article class="card card_recentes produtos-recentes">
+            <h3 class="card_titulo">Novas artes</h3>
+            <a href="#" class="card_link">Ver todos</a>
+            <ul class="card_list">
+                <li class="card_item">
+                    <img src="assets/img/arts1.jpeg" alt="Thumbnail" class="card_item-thumbnail">
+                    <h4 class="card_item-titulo">Sem título 01</h4>
+                    <p class="card_item-perfil">Antonio Tebyriçá</p>
                 </li>
-                <li class="cartao_item">
-                    <img src="assets/img/arts2.png" alt="Thumbnail" class="cartao_item-thumbnail">
-                    <h4 class="cartao_item-titulo">Sem título 02</h4>
-                    <p class="cartao_item-perfil">Antonio Tebyriçá</p>
+                <li class="card_item">
+                    <img src="assets/img/arts2.png" alt="Thumbnail" class="card_item-thumbnail">
+                    <h4 class="card_item-titulo">Sem título 02</h4>
+                    <p class="card_item-perfil">Antonio Tebyriçá</p>
                 </li>
-                <li class="cartao_item">
-                    <img src="assets/img/arts3.jpeg" alt="Thumbnail" class="cartao_item-thumbnail">
-                    <h4 class="cartao_item-titulo">Segurança</h4>
-                    <p class="cartao_item-perfil">Nikolas de Murtas</p>
+                <li class="card_item">
+                    <img src="assets/img/arts3.jpeg" alt="Thumbnail" class="card_item-thumbnail">
+                    <h4 class="card_item-titulo">Segurança</h4>
+                    <p class="card_item-perfil">Nikolas de Murtas</p>
                 </li>
-                <li class="cartao_item">
-                    <img src="assets/img/arts4.jpeg" alt="Thumbnail" class="cartao_item-thumbnail">
-                    <h4 class="cartao_item-titulo">Malunguisse</h4>
-                    <p class="cartao_item-perfil">Raphael Gibson</p>
+                <li class="card_item">
+                    <img src="assets/img/arts4.jpeg" alt="Thumbnail" class="card_item-thumbnail">
+                    <h4 class="card_item-titulo">Malunguisse</h4>
+                    <p class="card_item-perfil">Raphael Gibson</p>
                 </li>
-                <li class="cartao_item">
-                    <img src="assets/img/arts5.jpeg" alt="Thumbnail" class="cartao_item-thumbnail">
-                    <h4 class="cartao_item-titulo">Sem título 03</h4>
-                    <p class="cartao_item-perfil">Fernanda Sena</p>
+                <li class="card_item">
+                    <img src="assets/img/arts5.jpeg" alt="Thumbnail" class="card_item-thumbnail">
+                    <h4 class="card_item-titulo">Sem título 03</h4>
+                    <p class="card_item-perfil">Fernanda Sena</p>
                 </li>
-                <li class="cartao_item">
-                    <img src="assets/img/arts6.jpeg" alt="Thumbnail" class="cartao_item-thumbnail">
-                    <h4 class="cartao_item-titulo">Coroa da converse</h4>
-                    <p class="cartao_item-perfil">Juan Paul</p>
+                <li class="card_item">
+                    <img src="assets/img/arts6.jpeg" alt="Thumbnail" class="card_item-thumbnail">
+                    <h4 class="card_item-titulo">Coroa da converse</h4>
+                    <p class="card_item-perfil">Juan Paul</p>
                 </li>
             </ul>
         </article>
 
-        <article class="cartao cartao--destaque destaque-produtos">
-            <img src="assets/img/banner-mobile_2.png" alt="Banner do cartão" class="cartao_imagem cartao_imagem--mobile">
-            <img src="assets/img/banner_2.png" alt="Banner do cartão" class="cartao_imagem cartao_imagem--desktop">
-            <div class="cartao_conteudo">
-                <p class="cartao_destaque">Nova arte</p>
-                <h3 class="cartao_titulo-arte">Only Zikas - Lagoa Dompa Club</h3>
-                <p class="cartao_perfil">João ZMS</p>
-                <p class="cartao_info cartao_info--moeda">88,89</p>
-                <p class="cartao_info cartao_info--visualizacao cartao_info--visualizacao-compra">244 visualizações</p>
-                <button class="cartao_botao cartao_botao--compra cartao_botao--destaque">Comprar agora</button>
+        <article class="card card_destaque destaque-produtos">
+            <img src="assets/img/banner-mobile_2.png" alt="Banner do cartão" class="card_imagem--mobile">
+            <img src="assets/img/banner_2.png" alt="Banner do cartão" class="card_imagem--desktop">
+            <div class="card_conteudo">
+                <p class="card_titulo">Nova arte</p>
+                <h3 class="card_titulo-arte">Only Zikas - Lagoa Dompa Club</h3>
+                <p class="card_perfil">João ZMS</p>
+                <p class="card_info card_info--moeda">88,89</p>
+                <p class="card_info card_info--visualizacao card_info--visualizacao-compra">244 visualizações</p>
+                <button class="card_botao card_botao--compra card_botao--destaque">Comprar agora</button>
             </div>
         </article>
 
         <section class="secao secao-produtos">
             <h3 class="titulo-secao">Camisas mais recentes</h3>
-            <article class="cartao">
-                <img src="assets/img/produto_1.png" alt="Vídeo" class="cartao_imagem">
-                <div class="cartao_conteudo">
-                    <p class="cartao_perfil">André Soares</p>
-                    <h3 class="cartao_titulo-compra">IBM</h3>
-                    <p class="cartao_info cartao_info--moeda">33,33</p>
-                    <button class="cartao_botao cartao_botao--compra" aria-label="Assistir agora"></button>
+            <article class="card">
+                <img src="assets/img/produto_1.png" alt="Vídeo">
+                <div class="card_conteudo">
+                    <p class="card_perfil">André Soares</p>
+                    <h3 class="card_titulo-compra">IBM</h3>
+                    <p class="card_info card_info--moeda">33,33</p>
+                    <button class="card_botao card_botao--compra" aria-label="Assistir agora"></button>
                 </div>
             </article>
 
-            <article class="cartao">
-                <img src="assets/img/produto_2.png" alt="Vídeo" class="cartao_imagem">
-                <div class="cartao_conteudo">
-                    <p class="cartao_perfil">Luiza Sampaio</p>
-                    <h3 class="cartao_titulo-compra">Huflez Crew Philosophy Club</h3>
-                    <p class="cartao_info cartao_info--moeda">39,99</p>
-                    <button class="cartao_botao cartao_botao--compra" aria-label="Assistir agora"></button>
+            <article class="card">
+                <img src="assets/img/produto_2.png" alt="Vídeo">
+                <div class="card_conteudo">
+                    <p class="card_perfil">Luiza Sampaio</p>
+                    <h3 class="card_titulo-compra">Huflez Crew Philosophy Club</h3>
+                    <p class="card_info card_info--moeda">39,99</p>
+                    <button class="card_botao card_botao--compra" aria-label="Assistir agora"></button>
                 </div>
             </article>
 
-            <article class="cartao">
-                <img src="assets/img/produto_3.png" alt="Vídeo" class="cartao_imagem">
-                <div class="cartao_conteudo">
-                    <p class="cartao_perfil">Gabriel Sena</p>
-                    <h3 class="cartao_titulo-compra">Corujita noturna</h3>
-                    <p class="cartao_info cartao_info--moeda">45,50</p>
-                    <button class="cartao_botao cartao_botao--compra" aria-label="Assistir agora"></button>
+            <article class="card">
+                <img src="assets/img/produto_3.png" alt="Vídeo">
+                <div class="card_conteudo">
+                    <p class="card_perfil">Gabriel Sena</p>
+                    <h3 class="card_titulo-compra">Corujita noturna</h3>
+                    <p class="card_info card_info--moeda">45,50</p>
+                    <button class="card_botao card_botao--compra" aria-label="Assistir agora"></button>
                 </div>
             </article>
 
-            <article class="cartao">
-                <img src="assets/img/produto_4.png" alt="Vídeo" class="cartao_imagem">
-                <div class="cartao_conteudo">
-                    <p class="cartao_perfil">John Lopes</p>
-                    <h3 class="cartao_titulo-compra">GGG - Gatin G Gorro</h3>
-                    <p class="cartao_info cartao_info--moeda">49,99</p>
-                    <button class="cartao_botao cartao_botao--compra" aria-label="Assistir agora"></button>
+            <article class="card">
+                <img src="assets/img/produto_4.png" alt="Vídeo">
+                <div class="card_conteudo">
+                    <p class="card_perfil">John Lopes</p>
+                    <h3 class="card_titulo-compra">GGG - Gatin G Gorro</h3>
+                    <p class="card_info card_info--moeda">49,99</p>
+                    <button class="card_botao card_botao--compra" aria-label="Assistir agora"></button>
                 </div>
             </article>
         </section>

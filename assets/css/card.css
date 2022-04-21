@@ -1,0 +1,200 @@
+.card {
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #2C343A;
+}
+
+.card_destaque {
+    grid-column: span 2;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.card_imagem--desktop {
+    display: none;
+}
+
+.card_conteudo {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 8px;
+}
+
+.card_titulo {
+    font-size: 1.2rem;
+    font-weight: 700;
+    grid-column: span 2;
+}
+
+.card_titulo, .card_item-titulo, .card_titulo-arte, .card_titulo-compra, .card_titulo-play:hover {
+    cursor: pointer;
+}
+
+.card_titulo-arte {
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 700;
+    grid-column: span 2;
+}
+
+.card_titulo-compra {
+    font-size: 1.2rem;
+    font-weight: 700;
+    grid-column: span 2;
+    grid-row: span 6;
+}
+
+.card_titulo-play {
+    font-size: 1.2rem;
+    font-weight: 700;
+    grid-column: span 2;
+    grid-row: span 6;
+}
+
+.card_recentes {
+    display: none;
+}
+
+.card_perfil {
+    color: #95999C;
+    font-size: 14px;
+    line-height: 24px;
+    grid-column: span 2;
+}
+
+.card_info {
+    display: flex;
+    align-items: center;
+    color: #95999C;
+}
+
+.card_info--tempo::before {
+    content: "\e90c";
+    margin-right: 8px;
+}
+
+.card_info--visualizacao::before {
+    content: "\e90f";
+    margin-right: 8px;
+}
+
+.card_info--moeda::before {
+    content: "\e905";
+    margin-right: 8px;
+}
+
+.card_botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0480DC;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    justify-self: flex-end;
+}
+
+.card_botao:hover {
+    cursor: pointer;
+}
+
+.card_botao--play::before {
+    content: "\e90b";
+    font-size: 24px;
+}
+
+.card_botao--compra::before {
+    content: "\e901";
+    font-size: 24px;
+}
+
+.card_botao--destaque {
+    width: 100%;
+    grid-column: span 2;
+}
+
+.card_botao--destaque::before {
+    margin-right: 8px;
+}
+
+@media screen and (min-width: 1024px) {
+    .card_destaque  {
+        margin-bottom: 0px;
+    }
+
+    .card_imagem--mobile {
+        display: none;
+    }
+   
+    .card_imagem--desktop {
+        display: block;
+        max-width: 100%;
+        cursor: pointer;
+    }
+
+    .card_botao--destaque {
+        grid-column: auto;
+        padding: 16px 8px;
+    }
+
+    .card_recentes {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        row-gap: 24px;
+        width: 233px;
+        padding: 16px;
+        box-sizing: border-box;
+        align-self: flex-start;
+    }
+
+    .card_recentes .card_titulo {
+        grid-column: auto;
+    }
+
+    .card_link {
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: #0480DC;
+        justify-self: flex-end;
+    }
+
+    .card_list {
+        display: grid;
+        row-gap: 16px;
+        grid-column: span 2;
+    }
+
+    .card_item {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 8px;
+    }
+
+    .card_item-thumbnail {
+        width: 32px;
+        grid-row: span 2;
+        align-self: normal;
+        margin-top: 4px;
+        border-radius: 5px;
+    }
+
+    .card_item-thumbnail:hover {
+        cursor: pointer;
+    }
+
+    .card_item-titulo {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+        font-weight: 700;
+    }
+
+    .card_item-perfil {
+        font-size: 0.8rem;
+        color: #95999C;
+    }
+}

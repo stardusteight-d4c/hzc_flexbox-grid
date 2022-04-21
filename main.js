@@ -1,6 +1,6 @@
-const menuButton = document.querySelector('.cabecalho_menu');
-const menuLateral = document.querySelector('.menu-lateral');
+const menu_button = document.querySelector('.menu');
+const menu_vertical = document.querySelector('.menu_vertical');
 
-menuButton.addEventListener('click', () => {
-    menuLateral.classList.toggle('menu-lateral--ativo')
+menu_button.addEventListener('click', () => {
+    menu_vertical.classList.toggle('menu_vertical--ativo');
 })
